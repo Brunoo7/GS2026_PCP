@@ -132,7 +132,6 @@ O assistente foi testado em 17/11/2026 por pessoas de fora da equipe, usando o t
 
 | Indicador | Resultado |
 |---|---|
-| Pessoas de fora que testaram | (preencher) |
 | Atendimentos | 11 (7 por pergunta, 4 por categorias) |
 | Resposta encontrada (%) | 90,9 (10 de 11) |
 | Taxa de acerto: ajudou (%) | 81,8 (9 de 11) |
