@@ -10,7 +10,7 @@ import os
 import time
 from datetime import datetime
 
-from base import BaseConhecimento
+from base_conhecimento import BaseConhecimento
 
 
 # ---------------------------------------------------------------------------

@@ -6,7 +6,7 @@ import os
 import sys
 
 from assistente import Assistente
-from base import BaseConhecimento
+from base_conhecimento import BaseConhecimento
 
 
 def exibir_menu():

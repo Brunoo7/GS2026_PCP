@@ -128,21 +128,29 @@ Páginas oficiais e reportagens usadas para conferir detalhes:
 
 ## Resultado do teste com usuários
 
-> Preencher depois do teste: pelo menos 3 pessoas de fora da equipe e 10 atendimentos ou mais. Não registrar nomes nem dados dessas pessoas.
+O assistente foi testado em 17/11/2026 por pessoas de fora da equipe, usando o terminal sem ajuda dos integrantes. Foram registrados **11 atendimentos** em `data/historico.json`: 7 por pergunta em texto livre e 4 pela navegação de categorias. Nenhum nome nem dado pessoal foi registrado.
 
 | Indicador | Resultado |
 |---|---|
-| Pessoas testadas | (preencher) |
-| Atendimentos | (preencher) |
-| Resposta encontrada (%) | (preencher) |
-| Taxa de acerto: ajudou (%) | (preencher) |
-| Tempo médio para encontrar | (preencher) |
-| Tentativas por atendimento | (preencher) |
-| Facilidade de uso (1 a 5) | (preencher) |
+| Pessoas de fora que testaram | (preencher) |
+| Atendimentos | 11 (7 por pergunta, 4 por categorias) |
+| Resposta encontrada (%) | 90,9 (10 de 11) |
+| Taxa de acerto: ajudou (%) | 81,8 (9 de 11) |
+| Tempo médio para encontrar | 13,9 s |
+| Tentativas por atendimento | 1,0 |
+| Facilidade de uso (1 a 5) | 5,0 (média das notas registradas ao sair) |
 
-Dúvidas sem solução encontradas no teste: (preencher)
+**Dúvidas sem solução encontradas no teste:**
 
-Melhoria feita a partir do teste: (preencher, por exemplo: palavra-chave que foi adicionada)
+1. "Perdi meu título de eleitor, e agora?": o assistente respondeu com a orientação de tirar o título pela primeira vez, mas a pessoa precisava da segunda via. Ela marcou que a resposta não ajudou.
+2. "Posso votar com 16 anos?": nenhuma orientação foi encontrada.
+
+**Melhoria feita a partir do teste:** acrescentamos palavras-chave na base de conhecimento (`data/base_conhecimento.json`):
+
+- Orientação 2 (segunda via do título de eleitor): "perdi meu titulo" e "perdi meu titulo de eleitor". Com elas, a dúvida do título perdido passou a ser respondida pela orientação correta, com 8 pontos contra 5 da orientação do primeiro título.
+- Orientação 1 (primeiro título de eleitor): "votar com 16 anos" e "voto facultativo". Com elas, a dúvida sobre votar aos 16 anos passou a ser respondida (3 pontos, confiança MÉDIA), porque a própria orientação já explica que o voto é facultativo aos 16 e 17 anos.
+
+Depois da mudança, repetimos as demais perguntas do teste e elas continuaram sendo respondidas pelas mesmas orientações.
 
 ## Limitações
 
